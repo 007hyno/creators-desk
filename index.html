@@ -6,6 +6,9 @@
     <title>🎨Creators-Desk💻</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
@@ -17,14 +20,20 @@
 <body>
     <!-- /* -------------------🍟Navbar🍟 */ -->
     <header>
-      <p class="font1">Creators Desk</p>  
+      <div class="logo">
+        <img src="./Images/logo.png" class="logo-img" width="25px" alt="">
+        &nbsp;
+        <p>|</p>
+        &nbsp;
+        <p class="font1">Creators Desk</p>  
+      </div>
       <!-- <img class="logo" src="https://source.unsplash.com/iMdsjoiftZo/40x40" alt=""> -->
         <nav class="font1">
             <ul class="nav_links"> 
-                <li><a href="#" class="font2">Home</a></li>
-                <li><a href="#" class="font2">Our Work</a></li>
-                <li><a href="#" class="font2">About</a></li>
-                <a class="nav-btn font2" onclick="scrollWin()" href="#">Contact!</a>
+                <li><a href="./index.html" class="font2">Home</a></li>
+                <li><a href="./work.html" class="font2">Our Work</a></li>
+                <li><a href="./about.html" class="font2">About</a></li>
+                <a class="nav-btn font2" href="./contact.html">Contact!</a>
             </ul>
         </nav>
     </header>
@@ -44,7 +53,7 @@
       <stop offset="100%" stop-color="#3c434c1a" />
     </linearGradient>
   </defs>
-  <circle cx="190" cy="200" r="170" stroke="url(#gradient)" stroke-width="37" fill="none" transform='rotate(20 10 90)' />
+  <circle cx="290" cy="200" r="245" stroke="url(#gradient)" stroke-width="37" fill="none" transform='rotate(20 10 90)' />
 
 </svg>
         <div id="content">
@@ -60,18 +69,13 @@
     </div>
 
             <div class="team-title">
-                <p class="font1 main-title2">Creators we have worked with-</p>
+                <p class="font1 main-title2">-Creators we have worked with-</p>
             </div>
             <div id="card-container">
                 <div class="card">
                     <img src="https://source.unsplash.com/Tt3niyJNIfI/200x200" alt="">
                     <p class="p1 font1">Paras Rawat</p>
                     <p class="p2 font2" >Description here..</p>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/Tt3niyJNIfI/200x200" alt="">
-                    <p class="p1">Paras Rawat</p>
-                    <p class="p2">Description here..</p>
                 </div>
                 <div class="card">
                     <img src="https://source.unsplash.com/Tt3niyJNIfI/200x200" alt="">
@@ -137,13 +141,21 @@
 
 <!-- /*------------------ 🍜Footer🍛 */ -->
 
-<footer >
-a
+<div class="footer-logo">
+  <img src = "./Images/svg/instagram.svg" class="footer-logo-color" alt="Instagram logo"/>
+  <img src = "./Images/svg/email.svg" class="footer-logo-color" alt="Email logo"/>
+
+</div >
+<footer class="footer" >
+<div class="last-text">
+
+  <p>Creators desk by 007hyno. © All rights reserved</p>
+</div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-  var words = [' video Editing.', ' content.', ' thumbnail.'],
+  var words = [' video Editing.', ' content.', ' thumbnail.','graphic design.'],
     part,
     i = 0,
     offset = 0,
