@@ -10,10 +10,7 @@
 body{
     background-color: #3c434c;
 background-image: linear-gradient(135deg, #3c434c 0%, #181b21 100%);
-
-
-
-
+overflow-x: hidden;
 }
 /* -------------------🍟Navbar🍟 */
 .height100{
