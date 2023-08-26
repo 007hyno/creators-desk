@@ -65,9 +65,11 @@ header{
 }
 .navlinks{
   padding: 2px 3px;
-  /* margin: 0px 50px; */
+transition: 0.5s;
+border-bottom: 2px solid #ffffff01;
 }
 .navlinks:hover{
+  transition: 1s;
   border-bottom: 2px solid var(--primary2);
 }
 
@@ -200,7 +202,8 @@ justify-content: center;
   padding-left: 10px;
   padding-bottom: 13px;
   border-radius: 4px;
-  /* background:red; */
+  background:#ffffff01;
+  border: 4px solid #ffffff01;
 }
 .serviceItem:hover{
   cursor: pointer;
@@ -231,17 +234,54 @@ padding-right: 90px;
 /* sec3 */
 /* sec4 */
 .sec4{
-  height: 50vh;
-  display: flex;
-    justify-content: center;
-    align-items: center;
+  /* height: 50vh; */
+  /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: cente r; */
+    margin-top: 50px;
     color: white;
+    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    display: flex;
+    gap: var(--size-10);
+    align-items: start;
+    padding: var(--size-10);
+    
   }
+  .in{
+    visibility: hidden;
+    width: 0%;
+    max-height: 10px;
+  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00000033; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary2); 
+}
 .testimonyCont{
   border: 4px solid var(--back2);
-  margin: 0px 0px ;
-  padding: 20px;
-  width: 40%;
+  margin: 0px 50px ;
+  padding: 10px 60px;
+  /* width: 50%; */
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,6 +292,7 @@ padding-right: 90px;
   margin: 10px 30px;
 }
 .testiText p{
+
   color:white;
   font-weight: 200;
   text-align: center;
