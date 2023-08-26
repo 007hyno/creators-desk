@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
+    background-color: transparent;
+    color: #f3f5fa;
+}
+body{
+    background-color: #3c434c;
+background-image: linear-gradient(135deg, #3c434c 0%, #181b21 100%);
+overflow-x: hidden;
+}
+/* -------------------🍟Navbar🍟 */
+.height100{
+    height:100vh;
+}
+
+a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    border-radius: 5px;
+}
+header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    
+}
+
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    /* border: 1px solid red; */
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav_links li{
+    padding: 0px 20px;
+}
+
+/* .nav_links li a:hover{
+    color: rgb(76, 199, 243);
+    border-bottom: 2px solid rgba(71, 167, 251, 0.626);
+} */
+.nav-btn{
+    padding: 5px 14px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #385d6b;
+    box-shadow: 1px 1px 10px 1px #00bbff4a;
+    border-radius: 50px;
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease 0s; */
+}
+
+
+/*--------------- 🥫Main containt🥫 */
+svg {
+    position: absolute;
+    left:-10;
+    top: 120;
+    z-index: -1;
+}
+#container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#content{
+    padding: 8.2rem;
+    width: 50%;
+    /* border: 2px solid red; */
+    
+}
+.main-title1{
+    font-family: 'Baloo 2', cursive;
+    display: inline-block;
+    line-height: 49px;
+    /* height: 35px; */
+
+    font-size: 50px;
+}
+.main-title2{
+    font-family: 'Baloo 2', cursive;
+    display: inline-block;
+    /* line-height: 40px; */
+    /* height: 35px; */
+
+    font-size: 30px;
+}
+.main-text{
+padding: 10px;
+}
+.word0{
+    padding: 1px 5px;
+    background-color: #272f37;
+    border-radius: 10px 0px 0px 10px;}
+.word{
+    padding: 1px 5px;
+    background-color: #272f37;
+    border-radius: 0px 10px 10px 0px;
+    color: #ef9224;
+}
+#content_img{
+    /* border: 2px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/* 🧨🎇🎆🎆 */
+.contact-title{
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.contact-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px 40px;
+    /* height: 300px; */
+    /* background-color: transparent; */
+}
+.contact-main ul li{
+    list-style-type: none;
+    /* border: 4px solid #3d4145; */
+    padding: 20px 40px;
+    margin: 0px 10px;
+    margin-top: 20px;
+}
+.contact-main ul li a:hover{
+
+    border: 4px solid #3d4145;
+}
+.contact-main ul li a{
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: 'Comfortaa', cursive;
+    /* width: 100%; */
+}
+
+
+
+/* 🍥Card for creatos☕ */
+.team-title{
+    padding: 40px 0px;
+    text-align: center;
+}
+#card-container{
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 500px;
+    width: 1500px;
+    margin: 0 auto;
+    /* box-shadow: inset 0px 0px 10px 0px #000000; */
+
+}
+
+#card-container div {
+    height: 300px;
+    /* min-width: 270px; */
+    margin: 10px 30px;
+    animation: slide 15s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+  }
+
+.card{
+    z-index: -1;
+
+    margin: 5px;
+    background-color: #212529f9;
+    padding: 15px 10px;
+    border-style: solid;
+    border-color: #272f37;
+        /* box-shadow: 2px 1px 10px 1px #00bbff19; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 100px;
+}
+.card .p1{
+    font-family: 'Baloo 2', cursive;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card .p2{
+    font-family: 'Comfortaa', cursive;
+    font-size:13px;
+}
+
+/* ------------🍔creator Notes🍔 */
+.note-container{
+    padding: 40px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.note-card{
+    padding: 50px 20px;
+        width: fit-content;
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+.card-left{
+
+}
+.title{
+    padding: 10px 5px;
+}
+.card-right{
+    padding: 10px 10px;
+}
+
+/*------------------ 🍜Footer🍛 */
+footer{
+    /* line-height: 1000px; */
+        /* position: fixed; */
+        /* bottom: 0; */
+        margin-top: -50px;
+
+    margin-top: 20px;
+    padding: 10px 40px 0px 0px;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*
+    background-color: red;
+    color: white; */
+    text-align: center;
+ }
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+.footer-logo-color{
+    width: 50px;
+    padding:10px 6px;
+    filter: invert(0.8);
+}
+.footer-logo-color:hover{
+    padding:10px 4px;
+    filter: invert(1);
+}
+.last-text{
+    padding: 7px 0px;
+    background-color: #171c21;
+}
+
+/* ----------------🎀EXTRAA🎀 */
+.ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single{
+    display: flex;
+}
+
+.youtube{
+    padding: 3px 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    background-color: #f20000;
+
+}
+.gamer-name{
+    color: rgb(197, 45, 45);
+}
+.instagram{
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border: none;
+    background-color: #4158D0;
+    background-image: linear-gradient(225deg, #4158D0 0%, #9c2ac5 22%, #d22978 49%, #e57c26 75%, #f9c753 100%);
+    
+}
+.font1{
+font-family: 'Baloo 2', cursive;
+}
+.font2{
+font-family: 'Comfortaa', cursive;
+}
+
+.about-img{
+border-radius: 20px;
+}
