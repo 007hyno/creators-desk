@@ -6,20 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creators-Desk</title>
   <link rel="icon" type="image/x-icon" href="/images/logo1.png">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <link rel="stylesheet" href="./Style/index.css">
+<script src="./Js/script.js"></script>
+
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
   <header>
     <a href="#">
-    <div class="logo-name">
+      <div class="logo-name">
       <img class="navLogo" src="./Images/logo1.png" alt="Creators-Desk-logo">
       <p> | Creator Desk</p>
     </div>
   </a>
     <div class="navbar">
-      <div class="navlinks">
-        <a href="#home">Home</a>
+      <div class="navlinks active">
+        <a class="home" href="#home">Home</a>
       </div>
       <div class="navlinks">
         <a href="#about">About Us</a>
@@ -28,17 +31,24 @@
         <a href="#services">Services</a>
       </div>
       <div class="navlinks">
-        <a href="#contact">Contact us</a>
+        <a class="contact" href="#contact">Contact</a>
       </div>
     </div>
   </header>
+
+  <!-- <script>
+    window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
+console.log("asd")
+  </> -->
 
   <main>
     <section class="sec1">
       <div class="l left1">
         <h2 class="h1">Unleash the Power of Your Content with Us!</h2>
         <p class="para">Dive into the Future of Content <br>Management</p>
-        <button class="btn1">Learn More</button>
+        <button class="btn1 learnMore">Learn More</button>
       </div>
       <div class="r right1">
         <img class="banner" src="./Images/new2.png" alt="Book reading vector">
@@ -84,6 +94,8 @@
     </section>
 
     <section class="sec4">
+
+
       <div  class="testimonyCont in">
         <img class="rating" src="./Images/Frame 9.png" alt="rating">
         <div class="testiText">
@@ -110,31 +122,113 @@
             <div class="workImg">
               <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
             </div>
-            <div class="followers">
-              <p>134K</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testimonyCont t1">
+        <img class="rating" src="./Images/5star.png" alt="rating">
+        <div class="testiText">
+          <p>Combining fitness and entertainment on YouTube requires dynamic content. The content creation services offered by this company have exceeded my expectations. Their expertise in YouTube video editing, thumbnail creation, and channel management has been a game-changer for my brand, leading to increased viewership and engagement.</p>
+        </div>
+        <div class="testimonyUserDetails">
+          <div class="testimonyLeft">
+            <div class="userImage">
+              <img height="50px" width="50px" class="profile" src="./Images/arush bhola.jpg" alt="userImage">
+            </div>
+            <div class="userDetails">
+              <div class="userName">
+                <p>Aarush Bhola Fit - Mess</p>
+              </div>
+              <div class="userWork">
+                <p>Fit-Mess Vloger</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonyRight">
+            <div class="workImg">
+              <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
             </div>
           </div>
 
         </div>
       </div>
-      <div class="testimonyCont">
+
+
+      <div class="testimonyCont t2">
         <img class="rating" src="./Images/Frame 9.png" alt="rating">
         <div class="testiText">
-          <p>Our experience with this company has been nothing short of exceptional. Their content creation services
-            have helped us elevate our brand and engage our audience in meaningful ways.</p>
+          <p>Being a gaming content creator, I was looking for a way to make my videos stand out. This company's expertise in crafting captivating YouTube video thumbnails has done wonders for my channel. Their attention to detail and creative touch have undoubtedly contributed to my channel's growth.</p>
+        </div>
+        <div class="testimonyUserDetails">
+          <div class="testimonyLeft">
+            <div class="userImage">
+              <img height="50px" width="50px" class="profile" src="./Images/snax.jpg" alt="userImage">
+            </div>
+            <div class="userDetails">
+              <div class="userName">
+                <p>Snax Gaming</p>
+              </div>
+              <div class="userWork">
+                <p>Gaming-Content Creator</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonyRight">
+            <div class="workImg">
+              <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="testimonyCont t3">
+        <img class="rating" src="./Images/5star.png" alt="rating">
+        <div class="testiText">
+          <p>Managing a clothing brand involves not just great designs but also effective branding. The content creation services provided by this company have been instrumental in both. Their design skills and brand management strategies have helped our clothing brand gain recognition and thrive in a competitive market.</p>
+        </div>
+        <div class="testimonyUserDetails">
+          <div class="testimonyLeft">
+            <div class="userImage">
+              <img height="50px" width="50px" class="profile" src="./Images/all stag.png" alt="userImage">
+            </div>
+            <div class="userDetails">
+              <div class="userName">
+                <p>All-Stag</p>
+              </div>
+              <div class="userWork">
+                <p>Clothing Brand</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonyRight">
+            <div class="workImg">
+              <img class="ytlogo" src="./Images/all stag.png" alt="work image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="testimonyCont t4">
+        <img class="rating" src="./Images/Frame 9.png" alt="rating">
+        <div class="testiText">
+          <p>My journey as a lifestyle vlogger took a remarkable turn after partnering with this company. Their exceptional YouTube video editing and thumbnail creation have added a professional touch to my content. Along with managing my YouTube channel, they've played a significant role in boosting my subscriber base.</p>
         </div>
 
         <div class="testimonyUserDetails">
           <div class="testimonyLeft">
             <div class="userImage">
-              <img height="50px" width="50px" class="profile" src="./Images/logo1.png" alt="userImage">
+              <img height="50px" width="50px" class="profile" src="./Images/manv.jpg" alt="userImage">
             </div>
             <div class="userDetails">
               <div class="userName">
-                <p>John Cena</p>
+                <p>Manav Maggie Sukhija</p>
               </div>
               <div class="userWork">
-                <p>WWE</p>
+                <p>LifeStyle Vloger</p>
               </div>
             </div>
           </div>
@@ -143,31 +237,29 @@
             <div class="workImg">
               <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
             </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
           </div>
 
         </div>
       </div>
-      <div class="testimonyCont">
+
+
+      <div class="testimonyCont t5" onclick="">
         <img class="rating" src="./Images/Frame 9.png" alt="rating">
         <div class="testiText">
-          <p>Our experience with this company has been nothing short of exceptional. Their content creation services
-            have helped us elevate our brand and engage our audience in meaningful ways.</p>
+          <p>As a fitness vlogger, I can confidently say that this company's content creation services have transformed my YouTube channel. From top-notch video editing to eye-catching thumbnails, they've elevated the quality of my content. Thanks to them, my channel has grown exponentially, and my audience engagement has never been better.</p>
         </div>
 
         <div class="testimonyUserDetails">
           <div class="testimonyLeft">
             <div class="userImage">
-              <img height="50px" width="50px" class="profile" src="./Images/logo1.png" alt="userImage">
+              <img height="50px" width="50px" class="profile" src="./Images/mohit.jpg" alt="userImage">
             </div>
             <div class="userDetails">
               <div class="userName">
-                <p>John Cena</p>
+                <p>Mohit Bisht</p>
               </div>
               <div class="userWork">
-                <p>WWE</p>
+                <p>Fitness Vloger</p>
               </div>
             </div>
           </div>
@@ -176,112 +268,12 @@
             <div class="workImg">
               <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
             </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
           </div>
 
         </div>
       </div>
-      <div class="testimonyCont">
-        <img class="rating" src="./Images/Frame 9.png" alt="rating">
-        <div class="testiText">
-          <p>Our experience with this company has been nothing short of exceptional. Their content creation services
-            have helped us elevate our brand and engage our audience in meaningful ways.</p>
-        </div>
 
-        <div class="testimonyUserDetails">
-          <div class="testimonyLeft">
-            <div class="userImage">
-              <img height="50px" width="50px" class="profile" src="./Images/logo1.png" alt="userImage">
-            </div>
-            <div class="userDetails">
-              <div class="userName">
-                <p>John Cena</p>
-              </div>
-              <div class="userWork">
-                <p>WWE</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="testimonyRight">
-            <div class="workImg">
-              <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
-            </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="testimonyCont">
-        <img class="rating" src="./Images/Frame 9.png" alt="rating">
-        <div class="testiText">
-          <p>Our experience with this company has been nothing short of exceptional. Their content creation services
-            have helped us elevate our brand and engage our audience in meaningful ways.</p>
-        </div>
-
-        <div class="testimonyUserDetails">
-          <div class="testimonyLeft">
-            <div class="userImage">
-              <img height="50px" width="50px" class="profile" src="./Images/logo1.png" alt="userImage">
-            </div>
-            <div class="userDetails">
-              <div class="userName">
-                <p>John Cena</p>
-              </div>
-              <div class="userWork">
-                <p>WWE</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonyRight">
-            <div class="workImg">
-              <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
-            </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="testimonyCont">
-        <img class="rating" src="./Images/Frame 9.png" alt="rating">
-        <div class="testiText">
-          <p>Our experience with this company has been nothing short of exceptional. Their content creation services
-            have helped us elevate our brand and engage our audience in meaningful ways.</p>
-        </div>
-
-        <div class="testimonyUserDetails">
-          <div class="testimonyLeft">
-            <div class="userImage">
-              <img height="50px" width="50px" class="profile" src="./Images/logo1.png" alt="userImage">
-            </div>
-            <div class="userDetails">
-              <div class="userName">
-                <p>John Cena</p>
-              </div>
-              <div class="userWork">
-                <p>WWE</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonyRight">
-            <div class="workImg">
-              <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
-            </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
       <div class="testimonyCont in">
         <img class="rating" src="./Images/Frame 9.png" alt="rating">
         <div class="testiText">
@@ -308,15 +300,12 @@
             <div class="workImg">
               <img class="ytlogo" src="./Images/Youtube_logo.png" alt="work image">
             </div>
-            <div class="followers">
-              <p>134K</p>
-            </div>
           </div>
 
         </div>
       </div>
     </section>
-
+    
     <section class="sec5">
       <h2 class="h1">Tailored Solutions for Content Creators</h2>
       <p class="para">Unlock your creative potential with our comprehensive suite of content creation services.</p>
@@ -329,7 +318,7 @@
 
   </main>
 
-
+  
   <footer>
     <div class="logo-text">
       <a href="#"><img class="bottomLogo" src="./Images/logo1.png" alt=""></a>
@@ -347,7 +336,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 
 
 </body>
