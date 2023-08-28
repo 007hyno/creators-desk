@@ -15,36 +15,29 @@
   
   <header>
     <a href="#">
-      <div class="logo-name">
+      <div class="logo-name ">
       <img class="navLogo" src="./Images/logo1.png" alt="Creators-Desk-logo">
       <p> | Creator Desk</p>
     </div>
   </a>
-    <div class="navbar">
-      <div class="navlinks active">
-        <a class="home" href="#home">Home</a>
+    <div class="navbar ">
+      <div id="homeLink" class="  navlinks nl active">
+        <a href="#home">Home</a>
       </div>
-      <div class="navlinks">
-        <a href="#about">About Us</a>
-      </div>
-      <div class="navlinks">
+      <div id="servicesLink" class="navlinks nl">
         <a href="#services">Services</a>
       </div>
-      <div class="navlinks">
-        <a class="contact" href="#contact">Contact</a>
+      <div id="aboutLink" class="navlinks nl">
+        <a href="#about ">About Us</a>
+      </div>
+      <div class="navlinks ">
+        <a class="btns contact" href="./index.html#footer">Contact</a>
       </div>
     </div>
   </header>
 
-  <!-- <script>
-    window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
-console.log("asd")
-  </> -->
-
   <main>
-    <section class="sec1">
+    <section class="sec1" id="home">
       <div class="l left1">
         <h2 class="h1">Unleash the Power of Your Content with Us!</h2>
         <p class="para">Dive into the Future of Content <br>Management</p>
@@ -61,44 +54,50 @@ console.log("asd")
       </div>
       <div class="right2">
         <h2 class="h2">In a world saturated with information, your content needs to rise above the noise. </h2>
-        <p class="para">We are the architects of compelling narratives, the designers of seamless user journeys, and the strategists
-          behind content that demands attention.
-        </p>
+        <p class="para">Crafting narratives that captivate, designing journeys that engage, and strategic content. We are the architects of compelling narratives, the designers of seamless user journeys, and the strategists
+          behind content that demands attention.To craft impactful content, we blend narratives, design, and strategy.</p>
+          <div class="contactBtns">
+            <a  onclick="window.location.href='mailto:Creatordesk247@gmail.com'" class=" emailBtn" >Creatordesk247@gmail.com</a>
+            <a class="copyBtn uncopy" >Copy</a>
+            <a href="https://www.instagram.com/zipp.exe/" class="btn2" target="_blank">Instagram</a>
+          </div>
       </div>
     </section>
 
-    <section class="sec3">
+    <section class="sec3" id="services">
       <div class="left3">
-        <div class="serviceList">
-          <div class="serviceItem">
+        <div class="serviceList uncopy">
+          <div class="serviceItem si1 serviceH">
             <h2>Expert Video Editing</h2>
             <h4>Our team of skilled editors will transform your raw footage into a polished masterpiece, ensuring your
               videos captivate and engage your audience.</h4>
           </div>
-          <div class="serviceItem">
+          <div class="serviceItem si2">
             <h2>Captivating Motion Graphics</h2>
             <h4>Add a touch of visual flair to your videos with our stunning motion graphics. Our talented designers
               will bring your ideas to life, making your content stand out from the crowd.</h4>
           </div>
-          <div class="serviceItem">
+          <div class="serviceItem si3">
             <h2>More Creative Services</h2>
-            <h4>In addition to video editing and motion graphics, we offer a range of other creative services to meet
+            <h4>We offer a range of other creative services to meet
               all your content creation needs. From script-writing to sound design, we've got you covered.</h4>
           </div>
         </div>
       </div>
-      <div class="right3">
-        <img class="banner3" src="./Images/ban.jpg" alt="Book reading vector">
-        </h3>
+      <div class="right3 ">
+        <!-- <img class="banner3" src="./Images/ban.jpg" alt="Book reading vector"> -->
+        <div class="banner3" ><iframe allow="fullscreen" frameBorder="0" height="450" src="https://giphy.com/embed/u2wg2uXJbHzkXkPphr/video" width="600"></iframe></div>
+        
+      </h3>
       </div>
     </section>
 
-    <section class="sec4">
+    <section class="sec4 uncopy">
 
 
       <div  class="testimonyCont in">
         <img class="rating" src="./Images/Frame 9.png" alt="rating">
-        <div class="testiText">
+        <div class="testiText uncopy">
           <p>Our experience with this company has been nothing short of exceptional. Their content creation services
             have helped us elevate our brand and engage our audience in meaningful ways.</p>
         </div>
@@ -306,20 +305,20 @@ console.log("asd")
       </div>
     </section>
     
-    <section class="sec5">
+    <section class="sec5" id="about">
       <h2 class="h1">Tailored Solutions for Content Creators</h2>
       <p class="para">Unlock your creative potential with our comprehensive suite of content creation services.</p>
       <div class="contactBtns">
-        <button class="btn1">Contact Us</button>
-        <button class="btn2">Explore</button>
-        <button class="btn2">Instagram</button>
+        <a  onclick="window.location.href='mailto:Creatordesk247@gmail.com'" class=" emailBtn" >Creatordesk247@gmail.com</a>
+        <a class="copyBtn uncopy" >Copy</a>
+        <a href="https://www.instagram.com/zipp.exe/" class="btn2" target="_blank">Instagram</a>
       </div>
     </section>
 
   </main>
 
   
-  <footer>
+  <footer id="footer">
     <div class="logo-text">
       <a href="#"><img class="bottomLogo" src="./Images/logo1.png" alt=""></a>
       <span><strong>Creator-Desk</strong></span>
