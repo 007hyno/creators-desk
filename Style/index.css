@@ -28,6 +28,8 @@ a{
 /* Header */
 main{
   padding-top: 70px;
+    overflow-x: hidden;
+
 }
 header{
   z-index: 10;
@@ -36,15 +38,30 @@ header{
   align-items: center;
   width: 100%;
   position: fixed;
-  /* background: var(--back2); */
   color: white;
-background: #2f2f2fa8;
-box-shadow: 0 4px 30px #0000001a;
-backdrop-filter: blur(17.1px);
--webkit-backdrop-filter: blur(11.1px);
-border: 2px solid #2f2f2f5c;
+  box-shadow: 0 4px 30px #0000001a;
+  /* -webkit-backdrop-filter: blur(11.1px); */
+  /* backdrop-filter: blur(17.1px); */
+  /* border: 2px solid #2f2f2f5c; */
 }
+header::before{
+  content:"";
+  background: #2f2f2f5c;
+  position:absolute;
+  z-index:-1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.blur{
+  /* background: #2f2f2fa8; */
+  backdrop-filter: blur(17.1px);
+  /* -webkit-backdrop-filter: blur(11.1px); */
 
+}
 .logo-name{
 
   display: flex;
@@ -63,7 +80,7 @@ border: 2px solid #2f2f2f5c;
   width: auto;
 }
 .navbar{
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -75,6 +92,9 @@ border-bottom: 2px solid #ffffff01;
 .active{
   border-bottom: 2px solid var(--primary2);
 
+}
+.hamburger{
+display: none; 
 }
 .nl:hover{
   transition: 1s;
@@ -139,7 +159,7 @@ cursor: pointer;
 
 /* Sec1 */
 .sec1{
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-rows:100%;
   grid-template-columns:50% 50%;
@@ -201,10 +221,14 @@ margin-top: 15px;
   position: relative;
 }
 .banner{
-  height: 900px;
+  /* height: 900px;
   position: absolute;
   top: -110px;
-  left: -100px;
+  left: -100px; */
+  height: 53vw;
+  position: absolute;
+  top: -6vw;
+  left: -9vw;
   animation: zoominout 1.5s ease-out;
 }
 .bottomUp{
@@ -223,7 +247,6 @@ margin-top: 15px;
   }
 }
 @keyframes bottomUp {
-
   0% {
     transform: translatey(80%);
     opacity: 0.1; 

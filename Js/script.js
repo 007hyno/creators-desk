@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const service1 = document.querySelector(".si1");
   const service2 = document.querySelector(".si2");
   const service3 = document.querySelector(".si3");
+
+  const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
   
   const cb = document.querySelector(".copyBtn");
   
@@ -69,6 +72,9 @@ if(scroll>100){
   // navBlur{
 }, false);
 
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('hide');
+});
 
 learnMore.addEventListener('click', e=> {
   e.preventDefault();
