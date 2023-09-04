@@ -2,7 +2,9 @@
   main{
     padding-top: 10px;
   }
- 
+ header a{
+  margin-left: 23px ;
+ }
   .navbar{
     display: block;
     position: absolute;
@@ -56,27 +58,27 @@
   font-size: 12px;
  }
  .hamburger{
-  margin-left:10px;
   height :39px;
-  margin: 5px;
+  margin: 5px 25px;
   background-color: #ffffff22;
   padding: 7px;
   border-radius: 10px;
-    display:block; 
-    
+  display:block; 
+  
 }
+.hamActive{
+  background-color: var(--primary);
+}
+
 .active{
   border-bottom: none;
 }
 
 .hide {
   animation: btdown 0.2s forwards;
-  /* transition: opacity 1s; */
-  /* display: none; */
-
-
-
 }
+
+
 @keyframes btdown {
   0% {
     /* transform: translatey(20%); */
@@ -89,30 +91,235 @@
     /* transform: translatey(0); */
   }
 }
+
+.btn1{
+  background-color: var(--primary);
+}
+.btns{
+  background-color: var(--primary);
+}
+.emailBtn{
+  background-color: var(--primary);  
+}
+.btn2{
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  margin-top: 15px;
+  margin-left: 0px;
+  width: 100%;
+}
+.copyBtn{
+  border: 2px solid var(--primary);
+color: var(--primary);
+}
 .sec1{
   display: flex;
   flex-direction: column;
-  /* padding-left:0px; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  height: auto;
 }
 .left1{
-  padding: 45px 10px !important;
+  padding: 5px 10px !important;
   
 }
 
+.left1{
+  margin-top: 3rem ;
+}
 .h1{
-  font-weight: 500;
-    font-size: 42px;
-    line-height: 42px;
+  font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 3.2rem;
 }
 .para{
   margin-left: 2px;
-  margin-top: 4px;
-    font-size: 19px;
+  margin-top: 12px;
+  line-height: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.right1{
+  display: none;
+}
 
+.sec2{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.banner2{
+height: 215px;
+border-radius: 5px;
+filter: box-shadow();
+}
+.right2{
+  padding: 0px 25px;
+  margin-top: 1rem;
+  /* text-align: center; */
+}
+.right2 h2 {
+  margin-top: 1rem;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+.right2 p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.contactBtns {
+  margin: 0px 0px;
+  display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: 15px;
+}
+.contactBtns a{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.mailbtn{
+display: flex;
+}
 
+.sec3{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+.left3{
 
+}
+.right3{
+  display: none;
+}
+
+.serviceList{
+  padding:10px 0px;
+}
+.serviceItem{
+  margin: 10px 15px;
+  padding: 8px 10px;
+} 
+.si1{
+  background-image: radial-gradient(ellipse, #0000004c, #000000ff),url(../Images/prem1.png);
+  background-size:400px;
+  background-position: center center;
+  
+}
+.si2{
+  background-image: radial-gradient(ellipse, #0000004c, #000000ff),url(../Images/motion.jpeg);
+  background-size: cover;
+  background-position: center center;
+  
+}
+.si3{
+  background-image: radial-gradient(ellipse, #0000004c, #000000ff),url(../Images/creative.jpg);
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.sec4{
+  margin-top: 1.5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: auto;
+}
+.in {
+  /* visibility: hidden; */
+  width: 0%;
+  max-height: 10px;
+  display: none;
+}
+
+.testimonyCont{
+  margin: 0px 20px ;
+  padding: 1px 12px;
+  border-radius: 10px;
+  color: white;
+  animation: scroll 35s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  background: #2f2f2fa8;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(11.1px);
+  border: 1px solid #2f2f2f9e;
+}
+.testimonyCont .rating {
+  height: 7%;
+  margin-bottom: 11px;
+}
+.testiText p {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 22px;
+} 
+.testimonyUserDetails {
+  margin: 10px 5px
+}
+.profile {
+  height: 40px;
+  width: 40px;
+}
+.userName p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.userWork p{
+  font-size: 0.8rem;
+  
+}
+
+.sec5{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0px 25px;
+}
+.sec5 p{
+  margin-top: 10px;
+  padding: 0px 7px;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+footer{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0px 25px;
+  
+}
+
+.footlast{
+  font-size: 0.8rem;
+  line-height: 1.3rem;  
+}
+.footlast .left{
+  width: 100%;
+  text-align: center;
+}
+hr {
+  width: 100%;
+  margin: 4px 0px;
+}
+.footlast .right{
+  display: none;
+}
 
 
 

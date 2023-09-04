@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const navbar = document.querySelector(".navbar");
   
   const cb = document.querySelector(".copyBtn");
+  const cb2 = document.querySelector(".uncopy");
   
-  const homeLink = document.querySelector("#homeLink");
-  const aboutLink = document.querySelector("#aboutLink");
-  const servicesLink = document.querySelector("#servicesLink");
+  const servId = document.querySelector("#servId");
+  const homeLink = document.querySelector("#homeC");
+  const aboutLink = document.querySelector("#aboutC");
+  const servicesLink = document.querySelector("#servicesC");
 
   const home = document.querySelector("#home");
   const services = document.querySelector("#services");
@@ -46,22 +48,25 @@ if(scroll>100){
   }
   
   //Nav Active
-
+  if (window.innerWidth> 960) {
   if (isElementInViewport(home)) {
+    remCls(servicesLink,'active')
+    remCls(aboutLink,'active')
     homeLink.classList.add('active');
-    servicesLink.classList.remove('active');
-    aboutLink.classList.remove('active');
+    
   }
   if (isElementInViewport(about)) {
-    homeLink.classList.remove('active');
+    remCls(homeLink,'active')
     aboutLink.classList.add('active');
-    servicesLink.classList.remove('active');
+    remCls(servicesLink,'active')
   }
   if (isElementInViewport(services)) {
-    homeLink.classList.remove('active');
-    aboutLink.classList.remove('active');
+    remCls(homeLink,'active')
+    remCls(aboutLink,'active')
     servicesLink.classList.add('active');
   }
+}
+
   //Nav Active
   
   // navBlur{
@@ -72,8 +77,20 @@ if(scroll>100){
   // navBlur{
 }, false);
 
+
+function remCls(a,b){
+if(a.classList.contains(b)){
+  a.classList.remove(b)
+}
+}
+
+
+navbar.classList.toggle('hide');
+hamburger.classList.toggle('hamActive');
+
 hamburger.addEventListener('click', () => {
   navbar.classList.toggle('hide');
+  hamburger.classList.toggle('hamActive');
 });
 
 learnMore.addEventListener('click', e=> {
@@ -99,35 +116,39 @@ contact.addEventListener('click', e=> {
     e.preventDefault();
     });
 
-  // Copy Email Address
-  cb.addEventListener('click', ()=> {
-    navigator.clipboard.writeText("CreatorDesk247@gmail.com");
-    cb.textContent = 'Copied';
-    cb.classList.add("copyBtn2")
-    cb.classList.remove("copyBtn")
-    setTimeout(() => {
-      cb.textContent = 'Copy';
-      cb.classList.remove("copyBtn2")
-      cb.classList.add("copyBtn")
-    }, 1500)
-  });
 
+  servId.src= "../Images/prem1.png"   
+
+function removeAni(s){
+  remCls(servId,'bottomUp')
+    servId.src= s
+    servId.classList.add('bottomUp')
+    servId.style.animation = 'none';
+  servId.offsetHeight;
+  servId.style.animation = null;
+  }
 
 
   // Serice Highliter
   service1.addEventListener('click', ()=> {
-    service1.classList.add("serviceH")    
+    removeAni("../Images/prem1.png" )
+    
+    service1.classList.add("serviceH")
     service2.classList.remove("serviceH")    
     service3.classList.remove("serviceH")    
-
-
+    
+    
   });
   service2.addEventListener('click', ()=> {
+    removeAni("../Images/motion.jpeg")
+
     service1.classList.remove("serviceH")    
     service2.classList.add("serviceH")    
     service3.classList.remove("serviceH")    
   });
   service3.addEventListener('click', ()=> {
+    removeAni("../Images/creative.jpg")
+    
     service1.classList.remove("serviceH")    
     service2.classList.remove("serviceH")    
     service3.classList.add("serviceH")    
@@ -171,6 +192,26 @@ t1.addEventListener('click', ()=> {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
+
+  function cpy(){
+    navigator.clipboard.writeText("CreatorDesk247@gmail.com");
+    cb.textContent = 'Copied';
+    cb.classList.add("copyBtn2")
+    remCls(cb,'copyBtn')
+    setTimeout(() => {
+      cb.textContent = 'Copy';
+      remCls(cb,'copyBtn2')
+      cb.classList.add("copyBtn")
+    }, 1500)
+}
+
+  // Copy Email Address
+  cb2.addEventListener('click', ()=> {
+    cpy()
+  });  
+  // Copy Email Address
+
+
 
 
       });
