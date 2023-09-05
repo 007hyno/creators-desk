@@ -98,8 +98,17 @@
 .btns{
   background-color: var(--primary);
 }
+.mailBtn{
+  width: 100%;
+}
 .emailBtn{
   background-color: var(--primary);  
+    transition: 0.5s;
+    font-size: 1rem;
+    padding: 10px 30px;
+    color: var(--background);
+    border-radius: 50px;
+  
 }
 .btn2{
   border: 2px solid var(--primary);
@@ -109,6 +118,7 @@
   width: 100%;
 }
 .copyBtn{
+  display: none;
   border: 2px solid var(--primary);
 color: var(--primary);
 }
@@ -149,8 +159,10 @@ color: var(--primary);
   display: flex;
   flex-direction: column;
   height: auto;
+
 }
 .banner2{
+  margin-top: 1rem;
 height: 215px;
 border-radius: 5px;
 filter: box-shadow();
@@ -170,7 +182,12 @@ filter: box-shadow();
   font-size: 1rem;
   line-height: 1.2rem;
 }
+.left2{
+  padding-left: 0px;
+}
+
 .contactBtns {
+  width: 100%;
   margin: 0px 0px;
   display: flex;
 flex-direction: column;
@@ -180,13 +197,16 @@ margin-top: 15px;
 .contactBtns a{
   font-size: 1rem;
   line-height: 1.2rem;
+  width: 100%;
 }
 .mailbtn{
 display: flex;
+width: 100%;
+
 }
 
 .sec3{
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

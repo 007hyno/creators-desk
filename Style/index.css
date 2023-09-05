@@ -123,7 +123,7 @@ cursor: pointer;
   color: var(--background);
 
   border-radius: 50px 0px 0px 50px;
-}
+} 
 .emailBtn:hover{
   cursor: pointer;
 }
@@ -273,18 +273,21 @@ sec2 */
   display: grid;
   grid-template-rows:100%;
   grid-template-columns:50% 50%;
+  margin-top: 8rem;
 }
 .left2{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 90px;
+
 }
 .visible{
   visibility: visible;
 }
 .banner2{
   opacity: 0;
-  height: 20rem;
+  height: 24rem;
 }
 .right2{
   display: flex;
@@ -311,7 +314,7 @@ sec2 */
 /* sec2 */
 /* sec3 */
 .sec3{
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-rows:100%;
   grid-template-columns:50% 50%;
@@ -376,7 +379,7 @@ padding-right: 90px;
 }
 .banner3{
   opacity: 0;
-  height: 20rem;
+  height: 25rem;
   /* height: auto; */
 }
 /* sec3 */

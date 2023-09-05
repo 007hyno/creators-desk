@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const cb = document.querySelector(".copyBtn");
   const cb2 = document.querySelector(".uncopy");
+  const c = document.querySelector("#cop");
   
   const servId = document.querySelector("#servId");
   const homeLink = document.querySelector("#homeC");
@@ -193,7 +194,7 @@ t1.addEventListener('click', ()=> {
     );
   }
 
-  function cpy(){
+  function cpy(cb){
     navigator.clipboard.writeText("CreatorDesk247@gmail.com");
     cb.textContent = 'Copied';
     cb.classList.add("copyBtn2")
@@ -207,10 +208,13 @@ t1.addEventListener('click', ()=> {
 
   // Copy Email Address
   cb2.addEventListener('click', ()=> {
-    cpy()
+    cpy(cb2)
   });  
   // Copy Email Address
-
+  c.addEventListener('click',()=>{
+    cpy(c)
+    alert()
+})
 
 
 
